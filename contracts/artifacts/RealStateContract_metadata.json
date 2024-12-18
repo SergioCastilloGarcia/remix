@@ -1,0 +1,243 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_city",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_street",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_meters",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_registration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_owner",
+						"type": "string"
+					}
+				],
+				"name": "addRealState",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_registration",
+						"type": "uint256"
+					}
+				],
+				"name": "deleteRealStateByRegistration",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_city",
+						"type": "string"
+					}
+				],
+				"name": "getRealStateByCity",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "city",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "street",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "meters",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "registration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							}
+						],
+						"internalType": "struct RealStateContract.RealState[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_registration",
+						"type": "uint256"
+					}
+				],
+				"name": "getRealStateByRegistration",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "city",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "street",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "number",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "meters",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "registration",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "owner",
+								"type": "string"
+							}
+						],
+						"internalType": "struct RealStateContract.RealState",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "realStateArray",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "street",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "meters",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "registration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "owner",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/RealStateContract.sol": "RealStateContract"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/RealStateContract.sol": {
+			"keccak256": "0x1ef29b884c77239d54322585b97d28944c2268e9ad2ba9780cb7b3f1ceee1f89",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://63d3e30c631155ee1edb02ba233af85375581d80beb98043e135c30f5839dcca",
+				"dweb:/ipfs/QmP3eJA3tf8cze6Dzhj7ytY2XDm9n1rpXXwXUk9hJZYPp6"
+			]
+		}
+	},
+	"version": 1
+}

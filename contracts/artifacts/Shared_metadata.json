@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/RealStateContract.sol": "Shared"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/RealStateContract.sol": {
+			"keccak256": "0x1ef29b884c77239d54322585b97d28944c2268e9ad2ba9780cb7b3f1ceee1f89",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://63d3e30c631155ee1edb02ba233af85375581d80beb98043e135c30f5839dcca",
+				"dweb:/ipfs/QmP3eJA3tf8cze6Dzhj7ytY2XDm9n1rpXXwXUk9hJZYPp6"
+			]
+		}
+	},
+	"version": 1
+}
