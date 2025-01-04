@@ -78,6 +78,24 @@
 			},
 			{
 				"inputs": [],
+				"name": "getBalanceInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "contractBalance",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "balanceWeiStored",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getTikets",
 				"outputs": [
 					{
@@ -144,11 +162,11 @@
 	},
 	"sources": {
 		"contracts/MyContract.sol": {
-			"keccak256": "0x566bc56d770e5236f6a5271a7fa0a8f7dc1768cd044951fc9460117f1f86a92d",
+			"keccak256": "0xa2e256668db34adf91950538b9301dff44ee88e2bc0454e03cd23c873b5fc73c",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://44a55906b011ddfb532cda19d95f7ce1f151b762768838d7475014b41618d1cb",
-				"dweb:/ipfs/QmWffVdyAUqPUAqjtJdjdRur9vnmiMWXDECvGoNLb5bCn7"
+				"bzz-raw://5a4a48e5543dfcdd3f1f2fa01146258d03a094e3b5eccfe213646dc99cf01845",
+				"dweb:/ipfs/QmVgnSJredWukj5cGQpXiwhXLuvqSi7nntDweAxejvZ9uc"
 			]
 		}
 	},

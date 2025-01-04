@@ -47,5 +47,8 @@ contract MyContract {
         admin  = payable(adress);
         emit simpleConsoleLog("Admin cambiado");
     }
-
+ // Nueva función para consultar los balances
+    function getBalanceInfo() public view returns (uint contractBalance, uint balanceWeiStored) {
+        return (address(this).balance, balanceWei);
+    }
 }
