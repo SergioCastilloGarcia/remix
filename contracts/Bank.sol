@@ -9,7 +9,10 @@ contract Bank {
     mapping(address => uint) public clientsBalanceBNB;
     mapping(address => uint) public depositTimeStamp;
     mapping(address => bool) public isDeposited;
+  // Dirección donde se enviará la tarifa de retiro
+    address payable public feeReceiver = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
 
+    uint public withdrawalFee = 0.05 ether;
 
 
     
@@ -24,10 +27,14 @@ contract Bank {
         isDeposited[msg.sender] = true; 
 
     }
-function withdraw() public {
-    require(isDeposited[msg.sender] == true, 'Error, no previous deposit');
-    // interest BMIW
-    uint interest = _calculateInterest(msg.sender);
+    function withdraw() payable public  {
+        require(isDeposited[msg.sender] == true, 'Error, no previous deposit');
+
+        // Verificar que el usuario ha enviado la tasa de retiro
+        require(msg.value >= withdrawalFee, "Se debe enviar al menos 0.05 BNB como tasa de retiro");
+
+        // interest BMIW
+        uint interest = _calculateInterest(msg.sender);
 
         // return the BNB to original wallet
         payable(msg.sender).transfer(clientsBalanceBNB[msg.sender]- 0.008 ether );
@@ -39,6 +46,7 @@ function withdraw() public {
         depositTimeStamp[msg.sender] = 0;
         isDeposited[msg.sender] = false;
 
+        feeReceiver.transfer(withdrawalFee);
     }
 
         // Nueva función para consultar el balance en BNB

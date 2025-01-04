@@ -76,6 +76,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "feeReceiver",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "getDepositBalance",
 				"outputs": [
 					{
@@ -110,7 +123,20 @@
 				"inputs": [],
 				"name": "withdraw",
 				"outputs": [],
-				"stateMutability": "nonpayable",
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawalFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -182,11 +208,11 @@
 			]
 		},
 		"contracts/Bank.sol": {
-			"keccak256": "0xb86ce1377f9954db7875188b5b255d50cb483fae7c4131ab03dcc67af923173b",
+			"keccak256": "0x28aca7e6c1da3a3642387a439594fafb03deb18e1fa2381da8a8b392fcf72647",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://f5b99fb96c1f579c9dbd21d0078ebf9cb0243119a8154977a4fd6845280b1afc",
-				"dweb:/ipfs/QmRRN1yv5EDTr84zmxuXryWY5FwxFArqteSss1ZHH2CfLG"
+				"bzz-raw://6fcfafd2d52aea4126e81d91a660032740d94064ce54ab980513d75b16ad57ea",
+				"dweb:/ipfs/QmVByXx1ZZTbdMdFjutiqMEVnkc47ALyqWLcd1g1aPKSsi"
 			]
 		},
 		"contracts/Token.sol": {
