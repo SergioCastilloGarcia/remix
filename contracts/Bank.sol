@@ -27,9 +27,7 @@ contract Bank {
 function withdraw() public {
     require(isDeposited[msg.sender] == true, 'Error, no previous deposit');
     // interest BMIW
-        uint depositTotalTime = block.timestamp - depositTimeStamp[msg.sender];
-        uint interestPerSecond = (100*clientsBalanceBNB[msg.sender]) / 31668017;
-        uint interest = interestPerSecond * depositTotalTime;
+    uint interest = _calculateInterest(msg.sender);
 
         // return the BNB to original wallet
         payable(msg.sender).transfer(clientsBalanceBNB[msg.sender]- 0.008 ether );
@@ -41,6 +39,23 @@ function withdraw() public {
         depositTimeStamp[msg.sender] = 0;
         isDeposited[msg.sender] = false;
 
+    }
+
+        // Nueva función para consultar el balance en BNB
+    function getDepositBalance() external view returns (uint) {
+        return clientsBalanceBNB[msg.sender];
+    }
+    function calculateInterest() external view returns (uint) {
+        return _calculateInterest(msg.sender);
+    }
+    function _calculateInterest(address user) private view returns (uint) {
+        require(isDeposited[user], "No tienes un deposito activo");
+
+        uint depositTotalTime = block.timestamp - depositTimeStamp[user];
+        uint interestPerSecond = (100 * clientsBalanceBNB[user]) / 31668017;
+        uint interest = interestPerSecond * depositTotalTime;
+
+        return interest;
     }
 
 }

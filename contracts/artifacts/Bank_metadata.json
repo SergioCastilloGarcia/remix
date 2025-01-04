@@ -17,6 +17,19 @@
 				"type": "constructor"
 			},
 			{
+				"inputs": [],
+				"name": "calculateInterest",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -51,6 +64,19 @@
 					}
 				],
 				"name": "depositTimeStamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getDepositBalance",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -156,11 +182,11 @@
 			]
 		},
 		"contracts/Bank.sol": {
-			"keccak256": "0xb786de989208d7901002eb3bf9be45b70c0086719f944be1eea26cba980c64ef",
+			"keccak256": "0xb86ce1377f9954db7875188b5b255d50cb483fae7c4131ab03dcc67af923173b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://46fe639809f7e43d14bb297c0a5cb8d7a2bbf616bb3c6a7f922fa6caa680a15e",
-				"dweb:/ipfs/QmU1x84cTxvxBzzjK2DKM6KyQ5q9wZVB5DtPSLDS65KHko"
+				"bzz-raw://f5b99fb96c1f579c9dbd21d0078ebf9cb0243119a8154977a4fd6845280b1afc",
+				"dweb:/ipfs/QmRRN1yv5EDTr84zmxuXryWY5FwxFArqteSss1ZHH2CfLG"
 			]
 		},
 		"contracts/Token.sol": {
