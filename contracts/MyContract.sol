@@ -15,6 +15,8 @@ contract MyContract {
     function buyTiket(uint tiketIndex) payable public returns (bool) {
         // Comprobación
         require(tiketIndex >= 0 && tiketIndex <= 15);
+        // Verificación de que el tiket no está vendido
+        require(tikets[tiketIndex] == address(0), "El tiket ya ha sido comprado");
         require(msg.value == 0.02 ether, "Insuficient amount of BNB");
         balanceWei += msg.value;
 
@@ -51,4 +53,5 @@ contract MyContract {
     function getBalanceInfo() public view returns (uint contractBalance, uint balanceWeiStored) {
         return (address(this).balance, balanceWei);
     }
+    
 }
