@@ -6,8 +6,8 @@ pragma solidity ^0.8.10;
 contract MyContract {
     address[16] public tikets;
     uint public balanceWei = 0;
-    address payable public admin  = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
-    //address payable public admin  = payable(0x50d3b84a2b1787b7704DD50c67733b6b5B293629);
+    //address payable public admin  = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
+    address payable public admin  = payable(0x50d3b84a2b1787b7704DD50c67733b6b5B293629);
 
      event simpleConsoleLog(
         string mensaje

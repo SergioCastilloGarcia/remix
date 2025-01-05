@@ -15,8 +15,8 @@ contract Bank {
     mapping(address => bool) public isDeposited;
     mapping(address => bool) public isSpecialDeposited;
   // Dirección donde se enviará la tarifa de retiro
-    address payable public feeReceiver = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
-    //address payable public feeReceiver = payable(0x50d3b84a2b1787b7704DD50c67733b6b5B293629);
+    //address payable public feeReceiver = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
+    address payable public feeReceiver = payable(0x50d3b84a2b1787b7704DD50c67733b6b5B293629);
    
     uint public withdrawalFee = 0.05 ether;
 

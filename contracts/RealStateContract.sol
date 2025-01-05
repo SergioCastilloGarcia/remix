@@ -15,8 +15,8 @@ library Shared {
 contract RealStateContractRegistrations {
     mapping(uint => Shared.RealState) public realStateMap;
 
-    address payable public admin = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
-    //address payable public admin = payable(0x50d3b84a2b1787b7704DD50c67733b6b5B293629);
+    //address payable public admin = payable(0x4906BB5c1056d92A436191169A8ad383dC888aeb);
+    address payable public admin = payable(0x50d3b84a2b1787b7704DD50c67733b6b5B293629);
     mapping(address => bool) public authorizedAddresses;
      modifier onlyAdmin() {
         require(msg.sender == admin, "Only the admin can perform this action");
