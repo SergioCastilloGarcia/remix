@@ -6,10 +6,10 @@ import { deploy } from './ethers-lib'
 
 (async () => {
   try {
-    const RealStateContract = await deploy('RealStateContract', [])
-    console.log(`address: ${RealStateContract.address}`)
-    const RealStateContractCities = await deploy('RealStateContractCities', [])
-    console.log(`address: ${RealStateContractCities.address}`)
+   // const RealStateContract = await deploy('RealStateContract', [])
+    //console.log(`address: ${RealStateContract.address}`)
+    const RealStateContractRegistrations = await deploy('RealStateContractRegistrations', [])
+    console.log(`address: ${RealStateContractRegistrations.address}`)
 
   } catch (e) {
     console.log(e.message)

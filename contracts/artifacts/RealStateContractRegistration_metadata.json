@@ -9,32 +9,32 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "_city",
+						"name": "city",
 						"type": "string"
 					},
 					{
 						"internalType": "string",
-						"name": "_street",
+						"name": "street",
 						"type": "string"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_number",
+						"name": "number",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_meters",
+						"name": "meters",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "_registration",
+						"name": "registration",
 						"type": "uint256"
 					},
 					{
 						"internalType": "string",
-						"name": "_owner",
+						"name": "owner",
 						"type": "string"
 					}
 				],
@@ -47,7 +47,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "_registration",
+						"name": "registration",
 						"type": "uint256"
 					}
 				],
@@ -59,59 +59,8 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_city",
-						"type": "string"
-					}
-				],
-				"name": "getRealStateByCity",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "city",
-								"type": "string"
-							},
-							{
-								"internalType": "string",
-								"name": "street",
-								"type": "string"
-							},
-							{
-								"internalType": "uint256",
-								"name": "number",
-								"type": "uint256"
-							},
-							{
-								"internalType": "uint256",
-								"name": "meters",
-								"type": "uint256"
-							},
-							{
-								"internalType": "uint256",
-								"name": "registration",
-								"type": "uint256"
-							},
-							{
-								"internalType": "string",
-								"name": "owner",
-								"type": "string"
-							}
-						],
-						"internalType": "struct RealStateContract.RealState[]",
-						"name": "",
-						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "uint256",
-						"name": "_registration",
+						"name": "registration",
 						"type": "uint256"
 					}
 				],
@@ -150,7 +99,7 @@
 								"type": "string"
 							}
 						],
-						"internalType": "struct RealStateContract.RealState",
+						"internalType": "struct RealStateContractRegistration.RealState",
 						"name": "",
 						"type": "tuple"
 					}
@@ -166,7 +115,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "realStateMap",
+				"name": "properties",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -216,7 +165,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/RealStateContract.sol": "RealStateContract"
+			"contracts/RealStateContract.sol": "RealStateContractRegistration"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -231,11 +180,11 @@
 	},
 	"sources": {
 		"contracts/RealStateContract.sol": {
-			"keccak256": "0xfe2782edd609334522b7e1f73d84b9ab23cad7040c4937daf62cade0ca4d9ba6",
-			"license": "GPL-3.0",
+			"keccak256": "0x8a7aa6d1893271fb8cec0392b278ffd72b323c27e584f182db864f416dbae190",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://7a67fefcfcaf6068aeb4e30e83e0fbb54cfcd071464a9a01c6dd3c35fa2501c2",
-				"dweb:/ipfs/QmapYgsXmRu1X5KSfiHtEmvU6rtQN4C2a22jirxPBwFRWa"
+				"bzz-raw://7aac1a638eb131030c0a47fe890a2bd1a02584de502b11e1dbb63e2742f42351",
+				"dweb:/ipfs/QmXNAXSMSgv3uUNFHK7hG8MCpzDgoWYfqtqkzVvWhcQmRf"
 			]
 		}
 	},

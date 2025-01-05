@@ -305,11 +305,11 @@
 			]
 		},
 		"contracts/Bank.sol": {
-			"keccak256": "0x5c76fb66f838b39af7b7648155c83e325ee48ce221dfbcbfaf6633a7ec63110d",
+			"keccak256": "0xdd5509cc5f8fe78b825f76286ca3d83b4a90efaf49b5247086050e9e553038a9",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://b15a03a6c0a9668ede14ff9569582eb9654be1ab7b9e85136b00407a69164876",
-				"dweb:/ipfs/QmYm5zbyScZhCNp6fuhKx16Xmsubh8vxY1fHESMybNnxHb"
+				"bzz-raw://d77f146c7367f76fbac982f352c7903bf82e08882792cc00b57674ea9fef7a97",
+				"dweb:/ipfs/QmZ5fi7XrXq5mVGY6jebgjfGfUFx8NGoiNFVCGLMpvWKck"
 			]
 		},
 		"contracts/Token.sol": {
